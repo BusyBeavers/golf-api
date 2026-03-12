@@ -1,0 +1,37 @@
+### REQUEST 1: CORRECT POST  
+POST http://localhost:5888/handicap
+Content-type: application/json
+
+{
+    "rounds": [
+        {"score": 100, "par": 72, "slope": 75},
+        {"score": 110, "par": 72, "slope": 120},
+        {"score": 90, "par": 70, "slope": 100},
+        {"score": 105, "par": 72, "slope": 115},
+        {"score": 100, "par": 72, "slope": 75}
+    ]
+}
+
+### REQUEST 2: INCORRECT POST  
+POST http://localhost:5888/handicap
+Content-type: application/json
+
+{
+    "rounds": [
+        {"score": 100, "par": 72, "slope": 75},
+        {"score": 110, "par": 72, "slope": 120}
+    ]
+}
+
+### REQUEST 3: CORRECT POST  
+POST http://localhost:5888/handicap
+Content-type: application/json
+
+{
+    "rounds": [
+        {"score": 100, "par": 72, "slope": 75},
+        {"score": 110, "par": 72, "slope": 120},
+        {"score": 90, "par": 70, "slope": 100},
+        {"score": 105, "par": 72, "slope": 115}
+    ]
+}
